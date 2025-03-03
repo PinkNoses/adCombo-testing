@@ -1,0 +1,16 @@
+.profile-actions__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  
+  .profile-actions__list-item-img {
+    width: 22px;
+    height: 22px;
+  }
+  

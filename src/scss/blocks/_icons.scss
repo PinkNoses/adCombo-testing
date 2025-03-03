@@ -1,0 +1,76 @@
+.icon {
+  fill: transparent;
+  stroke: transparent;
+  stroke-width: 1.5;
+  width: 100%;
+  height: 100%;
+}
+
+.icon--diamond {
+  stroke: var(--accent);
+  transition: opacity 0.2s ease-in;
+
+  width: 18px;
+  height: 15px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.icon--diamond-big {
+  stroke: var(--accent);
+
+  transition: stroke 0.2s ease-in;
+
+  &:hover {
+    stroke: var(--text-color);
+  }
+}
+
+.icon--comment-text {
+  fill: var(--text-color);
+}
+
+.icon--eye {
+  fill: var(--text-color);
+}
+.icon--gift {
+  fill: var(--text-color);
+}
+.icon--heart {
+  fill: var(--text-color);
+}
+.icon--tick {
+  fill: var(--text-color);
+}
+
+.icon--comment-text,
+.icon--eye,
+.icon--gift,
+.icon--heart,
+.icon--camera,
+.icon--setting,
+.icon--profile {
+  transition: fill 0.2s ease-in;
+
+  &:hover {
+    fill: var(--accent);
+  }
+}
+
+.icon--profile {
+  fill: var(--text-color);
+}
+
+.icon--setting {
+  fill: var(--text-color);
+}
+
+.icon--camera {
+  fill: var(--text-color);
+}
+
+.icon--arrow-right {
+  fill: var(--text-color);
+}

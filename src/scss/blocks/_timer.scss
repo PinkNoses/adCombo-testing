@@ -1,0 +1,38 @@
+.timer {
+  background-color: var(--light-purple);
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  text-align: center;
+
+  padding: 13px 13px 13px 11px;
+}
+.timer__title {
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  -webkit-text-stroke: 0.2px var(--white);
+}
+.timer__text {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+}
+.timer__block {
+  border-radius: 5px;
+  padding: 5px 20px;
+  width: 238px;
+  height: 56px;
+  background-color: var(--white);
+
+  font-size: 40px;
+  color: var(--black);
+
+  display: flex;
+  gap: 10px;
+}

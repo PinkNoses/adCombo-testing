@@ -1,0 +1,29 @@
+@mixin mediaBg() {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile() {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
+@mixin mobileS() {
+  @media (min-width: 321px) {
+    @content;
+  }
+}

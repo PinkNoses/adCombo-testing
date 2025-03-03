@@ -1,0 +1,190 @@
+.card {
+  border-radius: 10px;
+  border: 2px solid var(--text-color);
+  max-width: 260px;
+  width: 100%;
+  background-color: rgba(149, 100, 170, 0.1);
+
+  padding-top: 15px;
+  padding-bottom: 16px;
+  padding-right: 5%;
+
+  font-weight: 700;
+
+  position: relative;
+  transition: all 0.2s ease-in;
+
+  /* &::before {
+    display: none;
+    content: "One time offer!";
+    border-radius: 5px;
+    padding: 3px 10px 4px 10px;
+    background-color: var(--accent);
+
+    font-size: 14px;
+    color: var(--black);
+
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet {
+      left: 13px;
+      top: 0;
+    }
+  }
+ */
+  @include mobileS {
+    margin: 0 auto;
+  }
+
+  @include tablet {
+    max-width: 150px;
+    height: auto;
+    padding: 15px 0;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  .card__item5,
+  .card__item6 {
+    max-width: 100%;
+    grid-column: span 2;
+
+    .card__info {
+      flex-direction: row;
+      gap: 41px;
+    }
+  }
+}
+
+@media screen and (min-width: 1197px) {
+  .card__item5 {
+    max-width: 150px;
+    grid-column: span 1;
+
+    .card__info {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+  .card__item6 {
+    max-width: 100%;
+    grid-column: 1/-1;
+    .card__info {
+      flex-direction: row;
+      gap: 41px;
+    }
+  }
+}
+
+.card--active {
+  background-color: var(--text-color);
+
+  .card__info::before {
+    display: block;
+  }
+}
+
+.card__hint {
+  display: inline-block;
+  display: none;
+  border-radius: 5px;
+  padding: 3px 10px 4px 10px;
+  background-color: var(--accent);
+
+  font-size: 14px;
+  color: var(--black);
+
+  position: absolute;
+  left: -10%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+
+  font-size: 24px;
+  color: var(--black);
+
+  @include tablet {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &::before {
+    display: none;
+    content: "One time offer!";
+    border-radius: 5px;
+    padding: 3px 10px 4px 10px;
+    background-color: var(--accent);
+
+    font-size: 14px;
+    color: var(--black);
+
+    position: absolute;
+    left: -10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include tablet {
+      left: 13px;
+      top: 0;
+    }
+  }
+}
+
+.card__info-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  background-color: var(--accent);
+
+  font-size: 10px;
+  color: var(--black);
+}
+
+.card__info-divider {
+  @include tablet {
+    display: none;
+  }
+}
+.card__btn {
+  display: none;
+
+  border-radius: 5px;
+  padding: 17px 28px;
+  background-color: var(--white);
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: rgba($color: #000, $alpha: 0.2);
+
+  transition: all 0.2s ease-in;
+
+  &--active {
+    background-color: var(--accent);
+    color: var(--black);
+  }
+
+  @include tablet {
+    display: block;
+  }
+}

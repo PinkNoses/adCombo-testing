@@ -1,0 +1,33 @@
+<section class="credits">
+  <div class="container">
+    <div class="wrap">
+      <div class="credits__sidebar">
+        @@include("profile.html")
+      </div>
+      <div class="credits__wrap">
+        <div class="credits__title">
+          <h1 class="title-1">Закончились кредиты?</h1>
+        </div>
+
+        <div class="credits__timer">
+          @@include("timer.html")
+        </div>
+
+        <div class="swiper credits__swiper" id="swiper">
+          <div class="swiper-wrapper credits__cards">
+            @@loop("templates/card.html", "data/card.json")
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="credits__form">
+          @@include("form.html")
+        </div>
+
+        <div class="credits__abilities">
+          @@include("abilities.html")
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

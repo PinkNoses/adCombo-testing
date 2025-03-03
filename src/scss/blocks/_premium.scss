@@ -1,0 +1,9 @@
+.premium {
+  &--small {
+    display: block;
+    
+    @include tablet {
+      display: none;
+    }
+  }
+}

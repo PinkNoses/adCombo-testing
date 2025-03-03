@@ -1,0 +1,24 @@
+[
+  {"item": "item1",
+    "price": "50"
+  },
+  {
+    "item": "item2",
+    "price": "150"
+  },
+  {
+    "item": "item3",
+    "price": "300"
+  },
+  {
+    "item": "item4",
+    "price": "500"
+  },
+  { "item": "item5",
+    "price": "1000"
+  },
+  {
+    "item": "item6",
+    "price": "1000"
+  }
+]

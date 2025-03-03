@@ -1,0 +1,10 @@
+.logo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--white);
+    display: none;
+
+    @include tablet {
+        display: block;
+    }
+}
